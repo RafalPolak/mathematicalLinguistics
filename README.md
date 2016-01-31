@@ -1,4 +1,4 @@
-# mathematicalLinguistics
+# Mathematical Linguistics
 First exercise - Automat DFA for coffee  
 Second exercise - Create regular expression/First/Follow/I rule/II rule from provide grammar  
 Example grammars  
