@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html ng-app="automatApp">
-
-<head>
-    <title>Automat</title>
-    <!-- css -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <!-- js -->
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- my js -->
-    <script src="app.js" type="text/javascript"></script>
-    <script src="automatController.js" type="text/javascript"></script>
-</head>
-
-<body ng-controller="automatCtrl">
+<div ng-controller="automatCtrl">
 	<div class="row">
 		<div class="col-md-12">
 			<h2>Automat do kawy</h2>
-		</div>	
+		</div>
 		<div class="col-md-12">
 			<h3>Informacje</h2>
-		</div>	
+		</div>
 	</div>
 	
 	<div class="row">
@@ -42,25 +21,22 @@
 			<p ng-show="isError" class="text-danger">ERROR</p>
 		</div>
 	</div>
-
 	<div class="row">
 		<div class="col-md-6">
-			<p>Wrzu&#263; monet&#281;: 
-			<input class="btn btn-default" type="button" value="0.5" ng-click="dodajDoCeny(0.5)" ng-disabled="isTooMuch1"/>
-			<input class="btn btn-default" type="button" value="1" ng-click="dodajDoCeny(1)" ng-disabled="isTooMuch2"/>
-			<input class="btn btn-default" type="button" value="2" ng-click="dodajDoCeny(2)" ng-disabled="isTooMuch3"/>
+			<p>Wrzu&#263; monet&#281;:
+				<input class="btn btn-default" type="button" value="0.5" ng-click="dodajDoCeny(0.5)" ng-disabled="isTooMuch1"/>
+				<input class="btn btn-default" type="button" value="1" ng-click="dodajDoCeny(1)" ng-disabled="isTooMuch2"/>
+				<input class="btn btn-default" type="button" value="2" ng-click="dodajDoCeny(2)" ng-disabled="isTooMuch3"/>
 			</p>
 		</div>
 	</div>
-
 	<div class="row">
 		<div class="col-md-6">
-			<p>Reset maszyny: 
-			<input class="btn btn-default" type="button" value="Wyczy&#347;&#263;" ng-click="reset()"/>
+			<p>Reset maszyny:
+				<input class="btn btn-default" type="button" value="Wyczy&#347;&#263;" ng-click="reset()"/>
 			</p>
 		</div>
 	</div>
-
 	<div class="row">
 		<div class="col-md-12">
 			<h3>Wrzucono</h3>
@@ -69,7 +45,4 @@
 			<p class="text-success">{{message}} z&#322;</p>
 		</div>
 	</div>
-
-</body>
-
-</html>
+</div>
