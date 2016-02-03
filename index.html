@@ -21,15 +21,24 @@
 		<script src="exercise1/automatController.js" type="text/javascript"></script>
 		<script src="exercise2/regularExpressionController.js" type="text/javascript"></script>
 		<script src="lib/app/app.js" type="text/javascript"></script>
+		<script src="lib/controllers/headersController.js" type="text/javascript"></script>
 	</head>
-	<body>
-	Choose exercise:
-  <a href="#exercise1">Exercise1</a> |
-  <a href="#exercise2">Exercise2</a> |
-  
-  <div class="view-animate-container">
-    <div ng-view class="view-animate"></div>
-  </div>
-		
+	<body ng-controller="indexHeadersCtrl">
+		<div class="container">
+			</br>
+			<div class="panel panel-default">
+				<div class="panel-heading">Wybierz zadanie:</div>
+				<div class="panel-body">
+					<ul class="nav nav-pills">
+						<li ng-class="{ active: isActive('/exercise1')}"><a href="#exercise1">Zadanie 1</a></li>
+						<li ng-class="{ active: isActive('/exercise2')}"><a href="#exercise2">Zadanie 2</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="view-animate-container">
+				<div ng-view class="view-animate"></div>
+			</div>
+		</div>
 	</body>
 </html>

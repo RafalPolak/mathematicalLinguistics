@@ -1,48 +1,48 @@
 <div ng-controller="automatCtrl">
-	<div class="row">
-		<div class="col-md-12">
-			<h2>Automat do kawy</h2>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Automat do kawy</h2>
+			</div>
+			<div class="col-md-12">
+				<h3>Informacje</h2>
+			</div>
 		</div>
-		<div class="col-md-12">
-			<h3>Informacje</h2>
+		
+		<div class="row">
+			<div class="col-md-2">
+				<p>Cena kawy: 4 z&#322;</p>
+			</div>
+			<div class="col-md-2">
+				<p ng-hide="isError">Obecny stan: {{currentState}}</p>
+				<p ng-show="isError" class="text-danger">Niepoprawny stan: {{currentState}}</p>
+			</div>
+			<div class="col-md-2">
+				<p ng-hide="isError">Wrzucone pieni&#261;dze: {{sumPrice}} z&#322;</p>
+				<p ng-show="isError" class="text-danger">ERROR</p>
+			</div>
 		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-2">
-			<p>Cena kawy: 4 z&#322;</p>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Wrzu&#263; monet&#281;:
+					<input class="btn btn-default" type="button" value="0.5" ng-click="dodajDoCeny(0.5)" ng-disabled="isTooMuch1"/>
+					<input class="btn btn-default" type="button" value="1" ng-click="dodajDoCeny(1)" ng-disabled="isTooMuch2"/>
+					<input class="btn btn-default" type="button" value="2" ng-click="dodajDoCeny(2)" ng-disabled="isTooMuch3"/>
+				</p>
+			</div>
 		</div>
-		<div class="col-md-2">
-			<p ng-hide="isError">Obecny stan: {{currentState}}</p>
-			<p ng-show="isError" class="text-danger">Niepoprawny stan: {{currentState}}</p>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Reset maszyny:
+					<input class="btn btn-default" type="button" value="Wyczy&#347;&#263;" ng-click="reset()"/>
+				</p>
+			</div>
 		</div>
-		<div class="col-md-2">
-			<p ng-hide="isError">Wrzucone pieni&#261;dze: {{sumPrice}} z&#322;</p>
-			<p ng-show="isError" class="text-danger">ERROR</p>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Wrzucono</h3>
+			</div>
+			<div ng-repeat="message in messages track by $index" class="col-md-12">
+				<p class="text-success">{{message}} z&#322;</p>
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<p>Wrzu&#263; monet&#281;:
-				<input class="btn btn-default" type="button" value="0.5" ng-click="dodajDoCeny(0.5)" ng-disabled="isTooMuch1"/>
-				<input class="btn btn-default" type="button" value="1" ng-click="dodajDoCeny(1)" ng-disabled="isTooMuch2"/>
-				<input class="btn btn-default" type="button" value="2" ng-click="dodajDoCeny(2)" ng-disabled="isTooMuch3"/>
-			</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<p>Reset maszyny:
-				<input class="btn btn-default" type="button" value="Wyczy&#347;&#263;" ng-click="reset()"/>
-			</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<h3>Wrzucono</h3>
-		</div>
-		<div ng-repeat="message in messages track by $index" class="col-md-12">
-			<p class="text-success">{{message}} z&#322;</p>
-		</div>
-	</div>
 </div>
