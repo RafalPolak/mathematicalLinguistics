@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="lib/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="lib/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<!-- flags -->
+		<link rel="stylesheet" href="lib/flags/flags.css">
 		<!-- js -->
 		<!-- Latest compiled and minified JavaScript -->
 		<!-- Lodash.js-->
@@ -27,7 +29,13 @@
 		<div class="container">
 			</br>
 			<div class="panel panel-default">
-				<div class="panel-heading">Wybierz zadanie:</div>
+				<div class="panel-heading">
+					Wybierz zadanie:
+					<div class="pull-right">
+					<img src="lib/flags/blank.gif" class="flag lang-en" alt="Great Britain" />
+					<img src="lib/flags/blank.gif" class="flag lang-pl" alt="Polska" />
+					</div>
+				</div>
 				<div class="panel-body">
 					<ul class="nav nav-pills">
 						<li ng-class="{ active: isActive('/exercise1')}"><a href="#exercise1">Zadanie 1</a></li>
