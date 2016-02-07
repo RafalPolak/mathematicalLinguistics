@@ -16,8 +16,13 @@
 		<script src="lib/js/angular.min.js"></script>
 		<script src="lib/js/angular-animate.min.js"></script>
 		<script src="lib/js/angular-route.min.js"></script>
+		<script src="lib/js/angular-sanitize.min.js"></script>
 		<script src="lib/js/jquery.min.js"></script>
 		<script src="lib/js/lodash.js"></script>
+		<!-- AngularJS translate -->
+		<script src="lib/js/angular-translate.min.js"></script>
+		<script src="lib/js/angular-translate-loader-static-files.min.js"></script>
+		<!-- Bootstrap -->
 		<script src="lib/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- my js -->
 		<script src="exercise1/automatController.js" type="text/javascript"></script>
@@ -30,16 +35,20 @@
 			</br>
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					Wybierz zadanie:
+					<p translate>HEADLINE</p>
 					<div class="pull-right">
-					<img src="lib/flags/blank.gif" class="flag lang-en" alt="Great Britain" />
-					<img src="lib/flags/blank.gif" class="flag lang-pl" alt="Polska" />
+						<button ng-click="switchLanguage('en_US')">
+							<img src="lib/flags/blank.gif" class="flag lang-en" alt="Great Britain" />
+						</button>
+						<button ng-click="switchLanguage('pl_PL')">
+							<img src="lib/flags/blank.gif" class="flag lang-pl" alt="Polska" />
+						</button>
 					</div>
 				</div>
 				<div class="panel-body">
 					<ul class="nav nav-pills">
-						<li ng-class="{ active: isActive('/exercise1')}"><a href="#exercise1">Zadanie 1</a></li>
-						<li ng-class="{ active: isActive('/exercise2')}"><a href="#exercise2">Zadanie 2</a></li>
+						<li ng-class="{ active: isActive('/exercise1')}"><a href="#exercise1" translate>TASKA</a></li>
+						<li ng-class="{ active: isActive('/exercise2')}"><a href="#exercise2" translate>TASKB</a></li>
 					</ul>
 				</div>
 			</div>
