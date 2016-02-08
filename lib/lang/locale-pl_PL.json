@@ -1,5 +1,17 @@
 {
  "HEADLINE": "Wybierz zadanie:",
  "TASKA": "Zadanie 1",
- "TASKB": "Zadanie 2"
+ "TASKB": "Zadanie 2",
+ "AUTOMAT": "Automat do kawy",
+ "INFORMATIONS": "Informacje",
+ "PRICE": "Cena kawy: 4 zł",
+ "CURRENT_STATE": "Obecny stan: ",
+ "INCORRECT_STATE": "Niepoprawny stan: ",
+ "MONEY_IN_MACHINE": "Wrzucone pieniądze: ",
+ "PLN": "zł",
+ "ERROR": "Błąd",
+ "INSERT_COIN": "Wrzuć monetę: ",
+ "MACHINE_RESET": "Reset maszyny: ",
+ "CLEAR": "Wyczyść",
+ "COINS_IN_MACHINE": "Wrzucono"
 }

@@ -1,5 +1,17 @@
 {
  "HEADLINE": "Choose exercie:",
  "TASKA": "Exercise 1",
- "TASKB": "Exercise 2"
+ "TASKB": "Exercise 2",
+ "AUTOMAT": "Coffee machine DFA",
+ "INFORMATIONS": "Informations",
+ "PRICE": "coffee price: 4 PLN",
+ "CURRENT_STATE": "Current state: ",
+ "INCORRECT_STATE": "Incorrect state: ",
+ "MONEY_IN_MACHINE": "Money in machine: ",
+ "PLN": "PLN",
+ "ERROR": "Error",
+ "INSERT_COIN": "Insert coin: ",
+ "MACHINE_RESET": "Machine reset: ",
+ "CLEAR": "Clear",
+ "COINS_IN_MACHINE": "Coins thrown into machine"
 }
