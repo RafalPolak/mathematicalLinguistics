@@ -13,5 +13,7 @@
  "INSERT_COIN": "Wrzuć monetę: ",
  "MACHINE_RESET": "Reset maszyny: ",
  "CLEAR": "Wyczyść",
- "COINS_IN_MACHINE": "Wrzucono"
+ "COINS_IN_MACHINE": "Wrzucono",
+ "EXERCISE1_DESCRIPTION": "Automat Deterministyczny (DFA)",
+ "EXERCISE2_DESCRIPTION": "Wyrażenia regularne na bazie gramatyki"
 }
