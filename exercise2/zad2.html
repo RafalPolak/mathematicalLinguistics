@@ -1,52 +1,52 @@
 <div ng-controller="expressionCtrl">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>&nbsp;Wyra&#380;enie regularne</h2>
+				<h2 translate>&nbsp;REGULAR_EXPRESSION</h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-1">
 				<form>
 					<div class="form-group">
-						<label for="exampleGramatyka">Gramatyka</label>
+						<label for="exampleGramatyka" translate>GRAMMAR</label>
 						<textarea class="form-control" ng-model="data.gramatyka" rows="5"></textarea>
 					</div>
-					<button type="submit" class="btn btn-default" ng-click="utworzWyrazenie()">Utworz wyrazenie</button>
-					<button type="submit" class="btn btn-default" ng-click="utworzPierwsze()">Wyznacz pierwsze</button>
-					<button type="submit" class="btn btn-default" ng-disabled="!czyPierwsze" ng-click="utworzNastepne()">Wyznacz nastepne</button>
-					<button type="submit" class="btn btn-default" ng-disabled="!czyPierwsze" ng-click="sprawdzIRegule()">I Regula</button>
-					<button type="submit" class="btn btn-default" ng-disabled="!czyNastepne" ng-click="sprawdzIIRegule()">II Regula</button>
+					<button type="submit" class="btn btn-default" ng-click="utworzWyrazenie()" translate>CREATE_EXPRESSION</button>
+					<button type="submit" class="btn btn-default" ng-click="utworzPierwsze()" translate>DESIGNATE_FIRST</button>
+					<button type="submit" class="btn btn-default" ng-disabled="!czyPierwsze" ng-click="utworzNastepne()" translate>DESIGNATE_NEXT</button>
+					<button type="submit" class="btn btn-default" ng-disabled="!czyPierwsze" ng-click="sprawdzIRegule()" translate>FIRST_RULE</button>
+					<button type="submit" class="btn btn-default" ng-disabled="!czyNastepne" ng-click="sprawdzIIRegule()" translate>SECOND_RULE</button>
 					</br>
 					</br>
 					
 					<div class="form-group" ng-show="czyPierwsze">
-						<label for="pierwsze">Pierwsze</label>
+						<label for="pierwsze" translate>FIRST</label>
 						<textarea class="form-control" rows="6" ng-model="pierwsze"></textarea>
 					</div>
 					<div class="form-group" ng-show="czyNastepne">
-						<label for="nastepne">Nastepne</label>
+						<label for="nastepne" translate>NEXT</label>
 						<textarea class="form-control" rows="6" ng-model="nastepne"></textarea>
 					</div>
 					<div class="form-group" ng-show="czyRegula1">
-						<label for="regulaA">I regu&#322;a</label>
+						<label for="regulaA" translate>FIRST_RULE</label>
 						<textarea class="form-control" rows="6" ng-model="regulaA"></textarea>
 					</div>
 					<div class="form-group" ng-show="czyRegula2">
-						<label for="regulaB">II regu&#322;a</label>
+						<label for="regulaB" translate>SECOND_RULE</label>
 						<textarea class="form-control" rows="6" ng-model="regulaB"></textarea>
 					</div>
 					<div ng-show="czyWyrazenie">
 						<div class="form-group">
-							<label for="exampleWyrazenie">Wyra&#380;enie</label>
+							<label for="exampleWyrazenie" translate>EXPRESSION</label>
 							<input type="text" class="form-control" id="wyrazenie" ng-model="data.wyjsciowaGramatyka" placeholder="Wprowad&#378; wyra&#380;enie">
 						</div>
 						<div class="form-group">
-							<label for="exampleZdanie">Zdanie</label>
+							<label for="exampleZdanie" translate>SENTENCE</label>
 							<input type="text" class="form-control" id="zdanie" ng-model="data.zdanie" placeholder="Wprowad&#378; zdanie do sprawdzenia">
 						</div>
 					</div>
 					<button type="submit" class="btn btn-default" ng-click="sprawdzCzyNalezy()" ng-show="czyWyrazenie">Sprawd&#378;</button>
-					<button type="submit" class="btn btn-default" ng-click="resetPol()">Reset p&#243;l</button>
+					<button type="submit" class="btn btn-default" ng-click="resetPol()" translate>RESET</button>
 				</form>
 			</div>
 		</div>

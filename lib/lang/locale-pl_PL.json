@@ -15,5 +15,17 @@
  "CLEAR": "Wyczyść",
  "COINS_IN_MACHINE": "Wrzucono",
  "EXERCISE1_DESCRIPTION": "Automat Deterministyczny (DFA)",
- "EXERCISE2_DESCRIPTION": "Wyrażenia regularne na bazie gramatyki"
+ "EXERCISE2_DESCRIPTION": "Wyrażenia regularne na bazie gramatyki",
+ "REGULAR_EXPRESSION": "Wyrażenie regularne",
+ "GRAMMAR": "Gramatyka",
+ "CREATE_EXPRESSION": "Utwórz wyrażenie",
+ "DESIGNATE_FIRST": "Wyznacz pierwsze",
+ "DESIGNATE_NEXT": "Wyznacz następne",
+ "FIRST_RULE": "I Reguła",
+ "SECOND_RULE": "II Reguła",
+ "FIRST": "Pierwsze",
+ "NEXT": "Następne",
+ "EXPRESSION": "Wyrażenie",
+ "SENTENCE": "Zdanie",
+ "RESET": "Reset pól"
 }

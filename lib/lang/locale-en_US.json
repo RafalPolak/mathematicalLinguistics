@@ -15,5 +15,17 @@
  "CLEAR": "Clear",
  "COINS_IN_MACHINE": "Coins thrown into machine",
  "EXERCISE1_DESCRIPTION": "Deterministic Automata (DFA)",
- "EXERCISE2_DESCRIPTION": "Regular expression based on grammar"
+ "EXERCISE2_DESCRIPTION": "Regular expression based on grammar",
+ "REGULAR_EXPRESSION": "Regular expression",
+ "GRAMMAR": "Grammar",
+ "CREATE_EXPRESSION": "Create expression",
+ "DESIGNATE_FIRST": "Designate first",
+ "DESIGNATE_NEXT": "Designate next",
+ "FIRST_RULE": "I rule",
+ "SECOND_RULE": "II rule",
+ "FIRST": "first",
+ "NEXT": "next",
+ "EXPRESSION": "expression",
+ "SENTENCE": "sentence",
+ "RESET": "reset field"
 }
