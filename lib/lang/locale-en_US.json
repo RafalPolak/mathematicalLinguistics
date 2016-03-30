@@ -27,5 +27,8 @@
  "NEXT": "next",
  "EXPRESSION": "expression",
  "SENTENCE": "sentence",
- "RESET": "reset field"
+ "RESET": "reset field",
+ "PLACEHOLDER_SENTENCE": "write sentence to check",
+ "CHECK": "Check",
+ "PLACEHOLDER_EXPRESSION": "write expression to check"
 }

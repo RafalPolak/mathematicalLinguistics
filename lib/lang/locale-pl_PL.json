@@ -27,5 +27,8 @@
  "NEXT": "Następne",
  "EXPRESSION": "Wyrażenie",
  "SENTENCE": "Zdanie",
- "RESET": "Reset pól"
+ "RESET": "Reset pól",
+ "PLACEHOLDER_SENTENCE": "Wprowadź zdanie do sprawdzenia",
+ "CHECK": "Sprawdź",
+ "PLACEHOLDER_EXPRESSION": "Wprowadź wyrażenie do sprawdzenia"
 }
