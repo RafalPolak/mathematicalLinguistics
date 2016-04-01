@@ -19,4 +19,4 @@ L::=C{C}
 C::=1|2|3|4|5|6|7|8|9|0  
   
   
-Used techologies: HTML 5, Bootstrap 3, AngularJS, Lodash.js  
+Used techologies: HTML 5, Bootstrap 3, AngularJS, Lodash.js, Font Awesome  
