@@ -30,5 +30,9 @@
  "RESET": "reset field",
  "PLACEHOLDER_SENTENCE": "write sentence to check",
  "CHECK": "Check",
- "PLACEHOLDER_EXPRESSION": "write expression to check"
+ "PLACEHOLDER_EXPRESSION": "write expression to check",
+ "EXPRESSION_MATCH": "Expression matched",
+ "EXPRESSION_NOT_MATCH": "Expression don't match",
+ "HISTORY": "History",
+ "IS_MATCHED": "Is matched"
 }

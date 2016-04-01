@@ -35,9 +35,9 @@ wyrazenie.controller('expressionCtrl', function($scope){
 
 	    //sprawdzenie czy dane zdanie pasuje do wyrazenia
 	    if(zdanie.match(regex)){
-	    	$scope.data.wynik = "tak";
+	    	$scope.data.wynik = "yes";
 	    }else{
-	    	$scope.data.wynik = "nie";
+	    	$scope.data.wynik = "no";
 	    }
 
 	    //utworzenie zmiennej do tablicy historii
@@ -549,9 +549,9 @@ wyrazenie.controller('expressionCtrl', function($scope){
 		
 		for(a=0;a<tempIRegula.length;a++){
 			if(tempIRegula[a].czyIRegulaSpelniona==true){
-				$scope.regulaA+=tempIRegula[a].litera+"  --> I Reguła OK\n";
+				$scope.regulaA+=tempIRegula[a].litera+"  == OK\n";
 			}else{
-				$scope.regulaA+=tempIRegula[a].litera+"  --> I Reguła NIE OK\n";
+				$scope.regulaA+=tempIRegula[a].litera+"  != OK\n";
 			}
 		}
 
@@ -581,9 +581,9 @@ wyrazenie.controller('expressionCtrl', function($scope){
 			//jeżeli część wspólna wynosi więcej niż 1 to znaczy że musimy poprawić regułę 
 
 			if(test.length>1){
-				$scope.regulaB+=temp[a].litera+" --> II Reguła NIE OK\n";
+				$scope.regulaB+=temp[a].litera+" != OK\n";
 			}else{
-				$scope.regulaB+=temp[a].litera+" --> II Reguła OK\n";
+				$scope.regulaB+=temp[a].litera+" == OK\n";
 			}
 
 
