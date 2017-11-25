@@ -1,7 +1,7 @@
 # Mathematical Linguistics
-First exercise - Automat DFA for coffee  
+First exercise - Automat DFA for coffee machine
 Second exercise - Create regular expression/First/Follow/I rule/II rule from provide grammar  
-Example grammars  
+Example grammars
 a)  
   
 S::=W;{W;}  
@@ -19,4 +19,4 @@ L::=C{C}
 C::=1|2|3|4|5|6|7|8|9|0  
   
   
-Used techologies: HTML 5, Bootstrap 3, AngularJS, Lodash.js, Font Awesome  
+Techologies: HTML 5, Bootstrap 3, AngularJS, Lodash.js, Font Awesome
